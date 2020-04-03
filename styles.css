@@ -366,6 +366,9 @@ footer{
 }
 
 @media screen and (min-width: 470px){
+    .hero{
+        height: 110vh;
+    }
     .hero::before{
         height: 8rem; /*important to specify the height, got from png file size*/
         background: url(images/wave-medium.png);
@@ -382,7 +385,7 @@ footer{
 
 @media screen and (min-width: 700px){
     header{ /*make hiking logo larger */
-        height: 8rem;
+        height: 10rem;
     }
 
     .nav-brand{
@@ -440,11 +443,11 @@ footer{
     }
 
     .hero{
-        height: 80vh;
+        height: 100vh;
     }
 
     .main-message{
-        transform: translateY(20%);
+        transform: translateY(5%);
     }
 
     .title-heading h1{
@@ -454,8 +457,17 @@ footer{
 
 
 @media screen and (min-width: 950px){
+    .hero{
+        height: 100vh;
+    }
+
+    /* moves the main message down  */
+    .main-message{
+        transform: translateY(15%);
+    }
+
     .hero::before{
-        height: 10rem; /*important to specify the height, got from png file size*/
+        height: 7.5rem; /*important to specify the height, got from png file size*/
         background: url(images/wave-large.png);
         background-size: cover;
     }
@@ -467,7 +479,7 @@ footer{
     }
 }
 
-
+/* full screen! */
 @media screen and (min-width: 1200px){
     .hero{
         height: 100vh;
@@ -475,6 +487,6 @@ footer{
 
     /* moves the main message down  */
     .main-message{
-        transform: translateY(30%);
+        transform: translateY(15%);
     }
 }
