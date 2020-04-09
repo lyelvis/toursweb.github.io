@@ -234,13 +234,14 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    height: 80%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(49,24,131,0.9) 0%, rgba(72,56,149, 0.8) 100%), url("images/header-bg.jpg") center no-repeat;
+    z-index: -1; /* so it is behind the text */
 }
 
 .star-gazing{
     background: url("images/stars.jpg") center no-repeat;
 }
-
 
 .hiking{
     background: url("images/hiking.jpg") center no-repeat;
@@ -355,25 +356,28 @@ footer{
 /* Media Queries 
 **********************************************************************************************/
 @media screen and (min-width: 100px){
+    html{
+        font-size:.8em;
+    }
     /* moves the main message "the great outdoor"  */
     .main-message{
         transform: translateY(10%);
     }
     .main-message h1{
-        font-size: 1.5em;
-    }
-    .main-message p{
-        font-size: 1em;
+        font-size: 1.9em;
     }
     .hero{
-        height: 150vh;
+        height: 90vh;
+    }
+    .activities-grid{
+        width: auto;
     }
     .activities-grid-item{
-        height: 80%;
-        width: 100%;
+        height: auto;
+        width: auto;
+        margin-left: -10%;
     }
     .activities-grid-item p{
-        font-size: 1em;
         text-align: center;
     
     }
@@ -405,6 +409,9 @@ footer{
     }
     .main-message p{
         font-size: 1.3em;
+    }
+    .activities-grid-item{
+        margin-left: 0;
     }
 
     
