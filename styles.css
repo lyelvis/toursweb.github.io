@@ -389,6 +389,9 @@ footer{
     
 }
 @media screen and (min-width: 470px){
+    html{
+        font-size: .8em;
+    }
     .hero{
         height: 110vh;
     }
@@ -417,11 +420,16 @@ footer{
     
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 840px){
+    html{
+        font-size: 1em;
+    }
     header{ /*make hiking logo larger */
         height: 10rem;
     }
-
+    .main-message{
+        margin-top: 1.5em;
+    }
     .nav-brand{
         width: 3.5rem;
     }
@@ -465,7 +473,7 @@ footer{
         height: 2px;
         transform: scaleX(0);
         transform-origin: left;
-        transition: transform 650ms;
+        transition: transform 400ms;
     }
 
     .current::before{
